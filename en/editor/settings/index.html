@@ -1,0 +1,2624 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+  
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+    <meta name="description" content="A button-by-button account of Save / ViewMap / Select / PinMan / WallE / BuildingE and the rest.">
+  
+  
+    <meta name="author" content="RWR Map Editing Group">
+  
+  
+    <link rel="canonical" href="https://rwrme.rwr-infra.uk/en/editor/settings/">
+  
+  
+    <link rel="prev" href="../interface/">
+  
+  
+    <link rel="next" href="../keys/">
+  
+  
+    
+    
+    
+    
+    <link rel="alternate" href="../../../editor/settings/" hreflang="zh-Hans">
+  
+    
+    
+    
+    
+    <link rel="alternate" href="../../../zh-hant/editor/settings/" hreflang="zh-Hant">
+  
+    
+    
+    
+    
+    <link rel="alternate" href="./" hreflang="en">
+  
+  
+  <link rel="icon" href="../../../assets/favicon.png">
+  <meta name="generator" content="zensical-0.0.62">
+
+    
+  
+    <title>The main panel · RWR Map Editor's Handbook</title>
+  
+
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.ce62732f.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.812a03bb.min.css">
+      
+      
+
+
+    
+    
+
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/glightbox.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/fonts.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    <script id="__trailing-slash">
+  (() => {
+    const path = location.pathname;
+    if (path.endsWith("/")) return;
+    const last = path.split("/").pop();
+    if (last && !last.includes(".")) {
+      history.replaceState(null, "", path + "/" + location.search + location.hash);
+    }
+  })();
+</script><script id="__rwr" type="application/json">{"languages":[{"lang":"zh-Hans","link":"./","name":"简体中文"},{"lang":"zh-Hant","link":"zh-hant/","name":"繁體中文"},{"lang":"en","link":"en/","name":"English"}],"ui":{"close":"Close search","filters":"Filters","results":"results","search":"Search","tag":"Filter by tag"}}</script>
+  
+  
+  
+  
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="RWR Map Editor's Handbook">
+  <meta property="og:title" content="The main panel">
+  <meta property="og:description" content="A button-by-button account of Save / ViewMap / Select / PinMan / WallE / BuildingE and the rest.">
+  <meta property="og:url" content="https://rwrme.rwr-infra.uk/en/editor/settings/">
+  <meta property="og:locale" content="en">
+  <meta property="og:locale:alternate" content="zh_Hans">
+  
+  <meta property="og:locale:alternate" content="zh_Hant">
+  
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The main panel">
+  <meta name="twitter:description" content="A button-by-button account of Save / ViewMap / Select / PinMan / WallE / BuildingE and the rest.">
+  <meta name="twitter:image" content="https://rwrme.rwr-infra.uk/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://rwrme.rwr-infra.uk/",
+        "url": "https://rwrme.rwr-infra.uk/",
+        "name": "RWR Map Editor\u0027s Handbook",
+        "alternateName": "RWR 地编手册",
+        "description": "A button-by-button account of Save / ViewMap / Select / PinMan / WallE / BuildingE and the rest.",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Organization",
+        "name": "RWR Map Editing Group",
+        "alternateName": "RWR 地编手册",
+        "url": "https://rwrme.rwr-infra.uk/"
+      }
+    ]
+  }
+  </script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-main-panel" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+
+
+
+
+
+
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../" title="RWR Map Editor&#x27;s Handbook" class="md-header__button md-logo" aria-label="RWR Map Editor&#x27;s Handbook" data-md-component="logo">
+      
+
+
+
+
+
+  <img src="../../../assets/rwricon.png" alt="RWR Map Editor's Handbook">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RWR Map Editor's Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The main panel
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        
+
+
+
+<form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Toggle light/dark"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Toggle light/dark" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      
+
+
+
+
+<div class="md-header__option">
+  <div class="md-select">
+    <button class="md-header__button md-icon" aria-label="切换地编版本">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 9A1.5 1.5 0 0 0 7 7.5 1.5 1.5 0 0 0 5.5 6 1.5 1.5 0 0 0 4 7.5 1.5 1.5 0 0 0 5.5 9m11.91 2.58c.36.36.59.86.59 1.42 0 .55-.22 1.05-.59 1.41l-5 5a1.996 1.996 0 0 1-2.83 0l-6.99-6.99C2.22 12.05 2 11.55 2 11V6c0-1.11.89-2 2-2h5c.55 0 1.05.22 1.41.58zm-3.87-5.87 1-1 6.87 6.87c.37.36.59.87.59 1.42s-.22 1.05-.58 1.41l-5.38 5.38-1-1L20.75 13z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          
+          
+          
+          
+          <li class="md-select__item">
+            <a href="./"
+               class="md-select__link" aria-current="true">
+              地编版本 0101<small class="md-select__note">2026-09-06</small>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="md-select__item">
+            <a href="../../../egg/en/editor/settings/"
+               class="md-select__link">
+              彩蛋<small class="md-select__note">2026-05-14</small>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+
+
+
+<div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-languages" viewBox="0 0 24 24"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          
+          
+          
+          <li class="md-select__item">
+            <a href="../../../editor/settings/" hreflang="zh-Hans"
+               class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          
+          
+          
+          <li class="md-select__item">
+            <a href="../../../zh-hant/editor/settings/" hreflang="zh-Hant"
+               class="md-select__link">
+              繁體中文
+            </a>
+          </li>
+        
+          
+          
+          
+          <li class="md-select__item">
+            <a href="./" hreflang="en"
+               class="md-select__link" aria-current="true">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/Autumnsnail/rwrme" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rwrme
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+
+
+
+
+
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prepare/" class="md-tabs__link">
+          
+  
+  Getting ready
+
+        </a>
+      </li>
+    
+  
+
+          
+            
+  
+  
+  
+    
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  The editor
+
+        </a>
+      </li>
+    
+  
+
+          
+            
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tables/" class="md-tabs__link">
+          
+  
+  Model inventories
+
+        </a>
+      </li>
+    
+  
+
+          
+            
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../settings/" class="md-tabs__link">
+          
+  
+  Configuration files
+
+        </a>
+      </li>
+    
+  
+
+          
+            
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../download/" class="md-tabs__link">
+          
+  
+  Previous versions
+
+        </a>
+      </li>
+    
+  
+
+          
+            
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/" class="md-tabs__link">
+          
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="RWR Map Editor&#x27;s Handbook" class="md-nav__button md-logo" aria-label="RWR Map Editor&#x27;s Handbook" data-md-component="logo">
+      
+
+
+
+
+
+  <img src="../../../assets/rwricon.png" alt="RWR Map Editor's Handbook">
+
+    </a>
+    RWR Map Editor's Handbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Autumnsnail/rwrme" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rwrme
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+          
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+        
+          
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_en_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../prepare/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-download" viewBox="0 0 24 24"><path d="M12 15V3M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Getting ready
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_en_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_en_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Getting ready
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+        
+          
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_en_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-layout-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  The editor
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_en_3" id="__nav_en_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_en_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_en_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  The editor
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sliders-horizontal" viewBox="0 0 24 24"><path d="M10 5H3M12 19H3M14 3v4M16 17v4M21 12h-9M21 19h-5M21 5h-7M8 10v4M8 12H3"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Main panel
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sliders-horizontal" viewBox="0 0 24 24"><path d="M10 5H3M12 19H3M14 3v4M16 17v4M21 12h-9M21 19h-5M21 5h-7M8 10v4M8 12H3"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Main panel
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#save" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Save
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ViewMap
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Select
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pinman" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        PinMan
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#walle" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        WallE
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buildinge" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        BuildingE
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platforme" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        PlatformE
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        FuncObjects
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meshe" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MeshE
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heightmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        HeightMap
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terrainbash" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        TerrainBash
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offroadbuilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        offroadbuilder
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Decal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assaum" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Assaum
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        A few extra notes
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        How do you draw a platform?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keys/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-keyboard" viewBox="0 0 24 24"><path d="M10 8h.01M12 12h.01M14 8h.01M16 12h.01M18 8h.01M6 8h.01M7 16h10M8 12h.01"/><rect width="20" height="16" x="2" y="4" rx="2"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Key bindings
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../id-search/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  ID search
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+        
+          
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_en_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tables/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-table" viewBox="0 0 24 24"><path d="M12 3v18"/><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M3 15h18"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Model inventories
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_en_4" id="__nav_en_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_en_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_en_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Model inventories
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tables/mesh/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  MESH E
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tables/wall/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Wall E
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tables/building/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Building E
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tables/vehicle/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Vehicle Scatter
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tables/decal/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Decal
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+        
+          
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_en_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../settings/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-settings" viewBox="0 0 24 24"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Configuration files
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_en_5" id="__nav_en_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_en_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_en_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Configuration files
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/map-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  mapSettings
+
+    
+  </span>
+  
+  
+    
+  
+
+
+
+  
+  
+  
+  
+    <span class="md-status md-status--partial" title="Incomplete">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/third-party/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-puzzle" viewBox="0 0 24 24"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  3rdParSettings
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/reference-images/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-image" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  RefpM
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+        
+          
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_en_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../download/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-archive" viewBox="0 0 24 24"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8M10 12h4"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Previous versions
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_en_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_en_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Previous versions
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+        
+          
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_en_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../about/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  About
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_en_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_en_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  About
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+        
+      
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#save" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Save
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ViewMap
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Select
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pinman" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        PinMan
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#walle" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        WallE
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buildinge" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        BuildingE
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platforme" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        PlatformE
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        FuncObjects
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meshe" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MeshE
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heightmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        HeightMap
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terrainbash" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        TerrainBash
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offroadbuilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        offroadbuilder
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Decal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assaum" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Assaum
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        A few extra notes
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        How do you draw a platform?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+
+
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        <li class="md-path__item"><a href="../../" class="md-path__link">
+            <span class="md-ellipsis">Home</span>
+          </a>
+        </li>
+        
+          
+        
+          
+            
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    The editor
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+          
+        
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+  
+
+
+<h1 id="the-main-panel">The main panel<a class="headerlink" href="#the-main-panel" title="Permanent link">&para;</a></h1>
+<p class="kicker">EDITOR · fourteen buttons, one job each</p>
+
+<p>The editor's top bar lays these tools out from left to right. Below they are taken one
+by one in order — every entry is <strong>something that came out of using it</strong>, not something
+guessed from the interface text.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Save</strong></p>
+<hr />
+<p>Save the map</p>
+<p><a href="#save"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>ViewMap</strong></p>
+<hr />
+<p>Generate the tactical preview image</p>
+<p><a href="#viewmap"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>Select</strong></p>
+<hr />
+<p>Select, move, rotate</p>
+<p><a href="#select"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>PinMan</strong></p>
+<hr />
+<p>Place reference objects</p>
+<p><a href="#pinman"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>WallE</strong></p>
+<hr />
+<p>Draw walls</p>
+<p><a href="#walle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>BuildingE</strong></p>
+<hr />
+<p>Place houses</p>
+<p><a href="#buildinge"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>PlatformE</strong></p>
+<hr />
+<p>Draw platforms, change heights</p>
+<p><a href="#platforme"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>FuncObjects</strong></p>
+<hr />
+<p>Ladders, crates, spawn points, bases</p>
+<p><a href="#funcobjects"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>MeshE</strong></p>
+<hr />
+<p>Place models, power poles</p>
+<p><a href="#meshe"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>HeightMap</strong></p>
+<hr />
+<p>Paint terrain height</p>
+<p><a href="#heightmap"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>TerrainBash</strong></p>
+<hr />
+<p>Paint ground texture</p>
+<p><a href="#terrainbash"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>offroadbuilder</strong></p>
+<hr />
+<p>Mark driving routes for the AI</p>
+<p><a href="#offroadbuilder"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>Decal</strong></p>
+<hr />
+<p>Ground decals</p>
+<p><a href="#decal"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>Assaum</strong></p>
+<hr />
+<p>Ready-made assemblies</p>
+<p><a href="#assaum"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>A few extra notes</strong></p>
+<hr />
+<p>Stacking order, ID reordering — the traps you cannot dodge</p>
+<p><a href="#extra"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+<li>
+<p><strong>How do you draw a platform?</strong></p>
+<hr />
+<p>From high ground down a gentle slope into the water, drawn through once step by step</p>
+<p><a href="#platform"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read</a></p>
+</li>
+</ul>
+</div>
+<h2 id="save">Save<a class="headerlink" href="#save" title="Permanent link">&para;</a></h2>
+<p>Saves the map; when it is done you get a sound.</p>
+<h2 id="viewmap">ViewMap<a class="headerlink" href="#viewmap" title="Permanent link">&para;</a></h2>
+<p>Generates the tactical preview image of the map — the map you look at in RWR by pressing Tab.</p>
+<div class="admonition question">
+<p class="admonition-title">Not verified</p>
+<p>The file name has to be adjusted by hand (not verified item by item).</p>
+</div>
+<h2 id="select">Select<a class="headerlink" href="#select" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Left click to select a single object, Ctrl+left click or left-drag to select several.</li>
+<li>Press Esc to deselect.</li>
+<li>Press Delete to delete the selected target.</li>
+<li>Press G to switch on move mode; moving the mouse then drags the selected objects away.</li>
+<li>Press R to switch on rotate mode; moving the mouse then rotates the selected objects to some angle.</li>
+<li>In any other tool mode, the Shift+1 shortcut jumps quickly back to the Select tool.</li>
+<li>You cannot select several platforms at once.</li>
+<li>In top-down view (orthographic) some platforms will not display or select properly; you have to switch to free camera (perspective) to select them.</li>
+<li>Moving and rotating in free camera (perspective) is not recommended; the interaction is poor.</li>
+</ul>
+<h2 id="pinman">PinMan<a class="headerlink" href="#pinman" title="Permanent link">&para;</a></h2>
+<p>Used to place a virtual reference object at the point you click.</p>
+<p>There are three options, but only the tank works.</p>
+<h2 id="walle">WallE<a class="headerlink" href="#walle" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Used to pick the kind of wall from the list, and to draw nodes with PathBush and then press space to join them into a line in placement order. You can pick the wall kind first and then draw, or draw first and then pick the wall kind — once you have picked, click the wall you already drew and the replacement is done.</li>
+<li>The search bar finds an object quickly by name, and for what each wall does see <a href="../../tables/wall/">Model inventories · Wall E</a>.</li>
+<li>With it selected by Select, you can edit the coordinates on this panel (the first field grows along X to the right, the second grows along Y downwards; the values are twice the coordinates of the current mouse position), use Add Point to add a connected segment in the drawing direction, and use the cross to delete that node.</li>
+<li>With several selected by Select, you can delete the specified objects on this panel; the same goes for Buiding, Mesh and the rest.</li>
+<li>With it selected by Select, you can see the id, the current layer and the wall kind on this panel, and set a custom height and whether to Merge.</li>
+<li>Marge is ticked by default, to stop the AI getting stuck on the wall and failing to climb over it.</li>
+<li>With ReHeight ticked you can type in the wall's height yourself.</li>
+</ul>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/017.png"><img alt="Main panel 1" src="../../../assets/editor/017.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/018.png"><img alt="Main panel 2" src="../../../assets/editor/018.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/019.png"><img alt="Main panel 3" src="../../../assets/editor/019.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/020.png"><img alt="Main panel 4" src="../../../assets/editor/020.png" /></a></p>
+<h2 id="buildinge">BuildingE<a class="headerlink" href="#buildinge" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Used to pick the kind of building from the list, and to draw buildings with DrawBush by holding the left button and dragging. You can pick the building kind first and then draw, or draw first and then pick the building kind — once you have picked, click the building you already drew and the replacement is done.</li>
+<li>The search bar finds an object quickly by name, and for what each building looks like see <a href="../../tables/building/">Model inventories · Building E</a>.</li>
+<li>At the very top, HeightDown and HeightUp change the height of the Building at the clicked spot, by 2 each time (6).</li>
+<li>RoofSwitch turns the roof into a pitched/flat roof; the pitched direction is fixed, so you have to select the building and press R to rotate it yourself.</li>
+<li>It is best to finish adjusting Height first and then stack new objects on top: the height of the objects above does not follow changes in the height of the Building below.</li>
+<li>With it selected by Select, you can see the id, the current layer, whether the roof is pitched and the building kind on this panel.</li>
+<li>Offset sets a custom offset (the first field grows along X to the right, the second grows along Z towards the top, the third grows along Y downwards).</li>
+<li>Right now the X axis cannot be changed.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Needs fixing</p>
+<p>In free camera (perspective), the perspective has serious problems depending on the direction; see the example image on the right above.</p>
+</div>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/021.png"><img alt="Main panel 5" src="../../../assets/editor/021.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/022.png"><img alt="Main panel 6" src="../../../assets/editor/022.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/023.png"><img alt="Main panel 7" src="../../../assets/editor/023.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/024.png"><img alt="Main panel 8" src="../../../assets/editor/024.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/025.png"><img alt="Main panel 9" src="../../../assets/editor/025.png" /></a></p>
+<h2 id="platforme">PlatformE<a class="headerlink" href="#platforme" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Used to pick the kind of platform from the list and draw with pathBush; like Wall, so no more detail here.</li>
+<li>For a worked example see below: How do you draw a platform?</li>
+<li>The search bar is like Wall's, so no more detail here.</li>
+<li>At the very bottom, TypeChange switches the Platform at the clicked spot between no special property, the deck property and the bridge property. (This section is not finished yet.)</li>
+<li>ChangeHei works by setting the height and then pressing Enter to put the tool into use; it changes the height of the Platform at the clicked spot.</li>
+<li>With it selected by Select, you can edit the coordinates on this panel; the method is like Wall's, so no more detail here.</li>
+<li>With it selected by Select, you can see the type, id, current layer, top material, the kind of wall on the platform's sides, the kind of wall added on top of the platform and the wall height on this panel.</li>
+<li>The kind of wall added on top of the platform can be changed with the WallE tool.</li>
+<li>The value added in SetMaterial can be wood, grass, pavement, terrian. (This section is not finished yet.)</li>
+</ul>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/026.png"><img alt="Main panel 10" src="../../../assets/editor/026.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/027.png"><img alt="Main panel 11" src="../../../assets/editor/027.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/028.png"><img alt="Main panel 12" src="../../../assets/editor/028.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/029.png"><img alt="Main panel 13" src="../../../assets/editor/029.png" /></a></p>
+<h2 id="funcobjects">FuncObjects<a class="headerlink" href="#funcobjects" title="Permanent link">&para;</a></h2>
+<p>LadderScatter and LadderEraser place ladders and delete ladders. A placed ladder snaps
+automatically to nearby buildings, platforms and anything else with fixed collision.</p>
+<div class="admonition warning">
+<p class="admonition-title">Needs optimisation</p>
+<p>The ladders' automatic snapping is currently unreliable.</p>
+<p><span class="redact" tabindex="0">Right now the snapping is about as well-behaved as a cat, and there are problems.</span></p>
+</div>
+<ul>
+<li>ItemSupplyScatter places the trigger area of a stash or an armory: stash is the stash, weapon_rack is the armory; once selected, click ChangeType below to switch.</li>
+<li>CrateScatter and CrateEraser place wooden crates and delete wooden crates; the items inside are random and cannot be specified.</li>
+<li>SpawnScatter and SpawnEraser create spawn points and delete spawn points; a spawn point should not sit too close to the map edge.</li>
+<li>BaseScatter creates a base by left-dragging. With it selected by Select, you can change the base's displayed name and specify which faction captured this base first; fill in 0, 1 or 2, <span class="redact" tabindex="0">which one is which I honestly do not know either haha XD</span></li>
+</ul>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/030.png"><img alt="Main panel 14" src="../../../assets/editor/030.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/031.png"><img alt="Main panel 15" src="../../../assets/editor/031.png" /></a></p>
+<h2 id="meshe">MeshE<a class="headerlink" href="#meshe" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Used to pick the kind of model from the list.</li>
+<li>The search bar is like Wall's, so no more detail here.</li>
+<li>StoneEraser and StoneScatter delete a random rock or place a random rock; for what the rocks look like see <a href="../../tables/mesh/">Model inventories · MESH E</a>.</li>
+<li>TreeEraser and TreeScatter delete a random tree or place a random tree; for what the trees look like see <a href="../../tables/mesh/">Model inventories · MESH E</a>.</li>
+<li>The tool at the very bottom is used like Wall: it places power poles as nodes, and once they are placed you press space to run wires in order between each pair — the wires are decoration only, with no collision.</li>
+<li>With it selected by Select, you can see the id, the kind and the collision box on this panel (not shown if it is the default).</li>
+<li>With ReCollision ticked you can change length, height and width in the window above (measured from the centre).</li>
+<li>offset sets a custom offset (the first field grows along X to the right, the second grows along Z towards the top, the third grows along Y downwards).</li>
+</ul>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/032.png"><img alt="Main panel 16" src="../../../assets/editor/032.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/033.png"><img alt="Main panel 17" src="../../../assets/editor/033.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/034.png"><img alt="Main panel 18" src="../../../assets/editor/034.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/035.png"><img alt="Main panel 19" src="../../../assets/editor/035.png" /></a></p>
+<h2 id="heightmap">HeightMap<a class="headerlink" href="#heightmap" title="Permanent link">&para;</a></h2>
+<ul>
+<li>HeightBush is the terrain brush. In the panel at the bottom left, SetHardness is the hardness, which decides how steep the transition is between the height you are painting and the background height, range 0 to 1; SerRange is the terrain brush's range; SetHeight is the terrain brush's height, range 0 to 1. Press X to lock the brush horizontally, Y to lock it vertically.</li>
+<li>HeightSmudge drags the height within a certain range under the mouse and, following the direction the mouse moves, makes the nearby terrain deform as a transition.</li>
+<li>Smooth flattens the terrain over the whole map.</li>
+<li>Noise adds noise to the terrain over the whole map, so that the map is not a big flat plain at a single height value but has some tiny bumps.</li>
+<li>heightPath is the path terrain brush; it is used like the Wall tool, the top left explains the relevant values and you can try it yourself.</li>
+</ul>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/036.png"><img alt="Main panel 20" src="../../../assets/editor/036.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/037.png"><img alt="Main panel 21" src="../../../assets/editor/037.png" /></a></p>
+<h2 id="terrainbash">TerrainBash<a class="headerlink" href="#terrainbash" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Pathpainter is the path ground-texture brush; it is used like the Wall tool, the top left explains the relevant values and you can try it yourself.</li>
+<li>The decay exponent is adjusted with [ and ]; it is not a description typed twice that turned into [[/]].</li>
+<li>painter is the ground-texture brush: Chg Index is the material kind, a number; Chg Rng is the range; Chg Har is the hardness.</li>
+<li>In version 0101, when you use this tool there may be a spare adjustment bar in the bottom left; it has no effect at all.</li>
+<li>Smooth flattens the ground texture over the whole map.</li>
+</ul>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/038.png"><img alt="Main panel 22" src="../../../assets/editor/038.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/039.png"><img alt="Main panel 23" src="../../../assets/editor/039.png" /></a></p>
+<h2 id="offroadbuilder">offroadbuilder<a class="headerlink" href="#offroadbuilder" title="Permanent link">&para;</a></h2>
+<p>Used to tell the AI that this route is a driving route.</p>
+<p>It is used like the Wall tool.</p>
+<h2 id="decal">Decal<a class="headerlink" href="#decal" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Used to pick the kind of decal from the list; you can think of it as printing another layer of material on top of the ground texture. Once picked, left click to place it.</li>
+<li>deleteDecals deletes the decals inside the marquee you drag.</li>
+<li>Once Select has picked it, you can use Length to change this decal's size, that is its scale.</li>
+</ul>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/040.png"><img alt="Main panel 24" src="../../../assets/editor/040.png" /></a></p>
+<h2 id="assaum">Assaum<a class="headerlink" href="#assaum" title="Permanent link">&para;</a></h2>
+<p>Used to pick assemblies from the list, an armory with its collision box and trigger area already built for example. Once picked, left click to place it.</p>
+<p>Add and Name are unavailable for now, with no effect.</p>
+<h2 id="extra">A few extra notes<a class="headerlink" href="#extra" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>If you want to put a Wall, Building, Platform or the like on top of a Building, then once you have thought it through you should draw from the bottom up; when drawing you have to make sure the start point is inside the previous element. That way all the objects stack one by one as layer1, layer2…, pick up the height of the previous one automatically, and climbing and other checks work properly too.</p>
+</li>
+<li>
+<p>Every time the editor saves it re-sorts the IDs, so the numbers may change.</p>
+</li>
+</ol>
+<h2 id="platform">How do you draw a platform?<a class="headerlink" href="#platform" title="Permanent link">&para;</a></h2>
+<p>Take a transition cliff platform as the example:</p>
+<p>The goal here is to get from the high ground on the left down a gentle slope into the water
+at the bottom of the valley. To the left of the arrow direction there is a slope that is not
+all that gentle, and to the right a sheer cliff, so the transition cliff should take the
+height of the slope on the left as its baseline.</p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/041.png"><img alt="Main panel 25" src="../../../assets/editor/041.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/042.png"><img alt="Main panel 26" src="../../../assets/editor/042.png" /></a></p>
+<p>Because when drawing a platform you have to make sure the end edge is to the right of the direction the start edge travels in, and the start edge is the edge that decides the height, we should first draw on the gentle slope to the left of the arrow, following the arrow direction of figure 1.</p>
+<p>(Eight points were drawn; if you want the change to be more even you can place a few more.) Then press space, place the other corresponding eight points to the right of the arrow, and press space a second time to finish drawing.</p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/043.png"><img alt="Main panel 27" src="../../../assets/editor/043.png" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/044.png"><img alt="Main panel 28" src="../../../assets/editor/044.png" /></a></p>
+<p>Then fine-tune the platform to make it reasonable.</p>
+<p>(The blue points are the reference points, that is the points generated by the first line drawn; the line between a blue point and a pink point is the terrain's transition.)</p>
+<p>(If your platform is that purple-and-black broken render colour, <span class="redact" tabindex="0">then congratulations, you placed it the wrong way round</span> — please note once more that when drawing a platform you have to make sure the end edge is to the right of the direction the start edge travels in.)</p>
+<p>(The images are not compressed, so the details can be zoomed in on.)</p>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/045.png"><img alt="Main panel 29" src="../../../assets/editor/045.png" /></a></p>
+<p>Looking at it in game, the terrain still came out poorly; adding a few more anchors and
+polishing the terrain matters.</p>
+<details class="note">
+<summary>The author's aside</summary>
+<p>Sure enough it came out a total mess — which shows how important it is to add a few more
+anchors and polish the terrain. Let this be a warning to you all :(</p>
+</details>
+<p><a class="glightbox" data-type="image" href="../../../assets/editor/046.png"><img alt="Main panel 30" src="../../../assets/editor/046.png" /></a></p>
+
+
+
+
+
+
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">Interface</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Tools</span>
+      
+    
+  </nav>
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+
+
+
+
+
+
+
+
+
+<footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../interface/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../keys/" class="md-footer__link md-footer__link--next" aria-label="Next: Key bindings">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Key bindings
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  <div class="brand-footer">
+    <div class="brand-footer__brand">
+      <a class="brand-footer__title" href="../../">
+        
+        <img class="brand-footer__logo" src="../../../assets/rwricon.png" alt="RWR Map Editor's Handbook">
+        
+        RWR Map Editor's Handbook<span>↗</span>
+      </a>
+      
+      <p>Written down because someone tried it.</p>
+    </div>
+    <div class="brand-footer__meta">
+      
+      Built with Zensical<br>Fonts and scripts are entirely self-hosted<br>
+      <a href="../../tags/">Browse by tag ↗</a>
+    </div>
+    <div class="brand-footer__bottom">
+      <span>RWR MAP EDITOR'S HANDBOOK</span><a href="https://github.com/rwr-infra/rwr-mapbook">Docs repository rwr-infra/rwr-mapbook ↗</a>
+      <a href="#__consent">Privacy settings</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<h4>Data & privacy</h4>
+<p>This site collects no visitor data. There is no analytics, no advertising, no cookie and no third-party request of any kind. Fonts, styles and scripts are all self-hosted, so any page contacts this site’s domain only. A single light/dark display preference is stored locally by the browser, and is removed when browser data is cleared.</p>
+
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Acknowledged</button>
+    
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.expand","navigation.footer","navigation.indexes","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"redirect":null,"search":"../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":[{"current":true,"date":"2026-09-06","id":"0101","label":"地编版本 0101"},{"date":"2026-05-14","id":"egg","label":"彩蛋"}]}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.8dcc8e9c.min.js"></script>
+      
+        <script src="../../../javascripts/glightbox.min.js"></script>
+      
+        <script src="../../../javascripts/search-lang.js"></script>
+      
+        <script src="../../../javascripts/redact.js"></script>
+      
+        <script src="../../../javascripts/download.js"></script>
+      
+    
+  </body>
+</html>
